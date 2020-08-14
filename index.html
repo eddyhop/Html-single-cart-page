@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Financial</title>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="./assets/js/main.min.js"></script>
+		<link rel='stylesheet' href="./assets/css/main.min.css"/>
+		<link rel="icon" href="assets/favicon.ico">
+	</head>
+	<body>
+		<div class="page">
+			<div class="nav nav-menu">
+				<div class="container font-bold text-center">
+					<a href="/"><img src="./assets/images/logo.png"></a>
+				</div>
+			</div>
+			<div class="container">
+				<h1 class="logo-panel text-h1">
+					<img class="logo-img" src="./assets/images/Dollar-coin.png" src="logo-image">
+					 How To Spend It  
+					<div class="sub-title">Spend the £80 billion hidden in tax havens</div>
+				</h1>
+				<div class="total-amount-panel">
+					<div>£</div>
+					<div class="total-amount bg-green" id="total_amount" data-default="80000000000" data-val="80000000000"></div>
+				</div>
+				<div class="product-list">
+					<div class="product-item">
+						<img alt="" src="./assets/images/free_condoms.png" class="product-img">
+						<div class="product-name">Free Condoms</div>
+						<div class="product-price" data-val="1">£1.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0" max="5"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/free_sanitary.png" class="product-img">
+						<div class="product-name">Free Sanitary Product in Public Toilets</div>
+						<div class="product-price" data-val="1">£1.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/mmr_vaccine.png" class="product-img">
+						<div class="product-name">MMR Vaccine</div>
+						<div class="product-price" data-val="20">£20.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/street_sign.png" class="product-img">
+						<div class="product-name">Street Sign</div>
+						<div class="product-price" data-val="20">£20.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/park_bench.png" class="product-img">
+						<div class="product-name">Park Bench</div>
+						<div class="product-price" data-val="45">£45.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/pothole_repair.png" class="product-img">
+						<div class="product-name">Pothole Repair</div>
+						<div class="product-price" data-val="50">£50.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/com_student.png" class="product-img">
+						<div class="product-name">Computer for Students in Need</div>
+						<div class="product-price" data-val="500">£500.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/police_officer.png" class="product-img">
+						<div class="product-name">Police Officer</div>
+						<div class="product-price" data-val="5000">£5,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/teacher.png" class="product-img">
+						<div class="product-name">Teacher</div>
+						<div class="product-price" data-val="7000">£7,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/bike_lane.png" class="product-img">
+						<div class="product-name">Bike Lane</div>
+						<div class="product-price" data-val="10000">£10,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/eldery_support.png" class="product-img">
+						<div class="product-name">Elderly Support Group</div>
+						<div class="product-price" data-val="10000">£10,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/basic_universal.png" class="product-img">
+						<div class="product-name">A Year's Basic Universal Income For 1 Person</div>
+						<div class="product-price" data-val="11000">£11,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/needle_exchange.png" class="product-img">
+						<div class="product-name">Needle Exchanges</div>
+						<div class="product-price" data-val="15000">£15,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/new_park.png" class="product-img">
+						<div class="product-name">New Park</div>
+						<div class="product-price" data-val="50000">£50,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/food_bank.png" class="product-img">
+						<div class="product-name">Run a Food Bank for A Year</div>
+						<div class="product-price" data-val="50000">£50,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/new_bus.png" class="product-img">
+						<div class="product-name">New Bus</div>
+						<div class="product-price" data-val="80000">£80,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/arts_culture.png" class="product-img">
+						<div class="product-name">Arts & Culture Program</div>
+						<div class="product-price" data-val="200000">£200,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/childcare_center.png" class="product-img">
+						<div class="product-name">Childcare Centre</div>
+						<div class="product-price" data-val="200000">£200,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/counseling_service.png" class="product-img">
+						<div class="product-name">Local Counseling Service</div>
+						<div class="product-price" data-val="250000">£250,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/library.png" class="product-img">
+						<div class="product-name">Library</div>
+						<div class="product-price" data-val="4000000">£400,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/solar_power.png" class="product-img">
+						<div class="product-name">Solar Power Plant</div>
+						<div class="product-price" data-val="4000000">£400,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/graveyard.png" class="product-img">
+						<div class="product-name">Graveyard</div>
+						<div class="product-price" data-val="500000">£500,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/women_shelter.png" class="product-img">
+						<div class="product-name">Women’s Shelter</div>
+						<div class="product-price" data-val="500000">£500,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/homeless_shelter.png" class="product-img">
+						<div class="product-name">Homeless Shelter</div>
+						<div class="product-price" data-val="6000000">£600,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/science_funding.png" class="product-img">
+						<div class="product-name">Science Funding</div>
+						<div class="product-price" data-val="600000">£600,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/fire_station.png" class="product-img">
+						<div class="product-name">Fire Station</div>
+						<div class="product-price" data-val="1000000">£1,000,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/hospital.png" class="product-img">
+						<div class="product-name">Hospital</div>
+						<div class="product-price" data-val="3000000">£3,000,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/local_police.png" class="product-img">
+						<div class="product-name">Local Police Station</div>
+						<div class="product-price" data-val="3000000">£3,000,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/sewer_system.png" class="product-img">
+						<div class="product-name">Sewer System Upgrade</div>
+						<div class="product-price" data-val="20000000">£20,000,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/train.png" class="product-img">
+						<div class="product-name">Train</div>
+						<div class="product-price" data-val="20000000">£20,000,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/public_gym.png" class="product-img">
+						<div class="product-name">Public Gym</div>
+						<div class="product-price" data-val="25000000">£25,000,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/state_secondary.png" class="product-img">
+						<div class="product-name">State Secondary School</div>
+						<div class="product-price" data-val="30000000">£30,000,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/space_program.png" class="product-img">
+						<div class="product-name">Space Program</div>
+						<div class="product-price" data-val="300000000">£300,000,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/airport.png" class="product-img">
+						<div class="product-name">Airport</div>
+						<div class="product-price" data-val="2000000000">£2,000,000,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/skyscraper.png" class="product-img">
+						<div class="product-name">Skyscraper</div>
+						<div class="product-price" data-val="4000000000">£4,000,000,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/theme_park.png" class="product-img">
+						<div class="product-name">Theme Park</div>
+						<div class="product-price" data-val="5000000000">£5,000,000,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/eurotunnel.png" class="product-img">
+						<div class="product-name">Eurotunnel</div>
+						<div class="product-price" data-val="21000000000">£21,000,000,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+					<div class="product-item">
+						<img alt="" src="./assets/images/world_hunger.png" class="product-img">
+						<div class="product-name">1 year without World Hunger</div>
+						<div class="product-price" data-val="30000000000">£30,000,000,000.00</div>
+						<div class="product-footer">
+							<button class="btn btn-sell" disabled>Sell</button>
+							<input type="number" class="product-amount" min="0" value="0"/>
+							<button class="btn btn-buy">Buy</button>
+						</div>
+					</div>
+				</div>
+				<div class="checkout-panel">
+					<div class="checkout-title">Your Receipt</div>
+					<div class="checkout-list"></div>
+					<div class="checkout-total">
+						<span>TOTAL</span>
+						<span id="checkout_total"></span>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer-link text-center"><a href="/"><img src="./assets/images/logo.png"></a></div>
+			</div>
+		</div>
+	</body>
+</html>
